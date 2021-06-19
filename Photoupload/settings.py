@@ -24,9 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '&cwd@_7*0^w78&4v+3#&=m6ge_-0fwb(cnp8^=3cq%d@oo!jj^'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['john90.herokuapp.com','127.0.0.1']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -125,7 +125,7 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR,'static')
 ]
 
 
-MEDIA_ROOT = os.path.join(BASE_DIR,'static/images')
-
 STATIC_ROOT = 'assets'
 
+MEDIA_ROOT = os.path.join(BASE_DIR,'static/images')
+    
